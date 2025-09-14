@@ -52,7 +52,7 @@ The repo includes a monolithic demo: examples/green_serving_demo.py
 It wraps a model, lets ranks adapt briefly, measures latency/throughput/VRAM/accuracy before/after/materialized, and exports TorchScript/ONNX.
 
 bash
-Copier le code
+
 # ResNet18, quick benchmark with real CIFAR-10
 python examples/green_serving_demo.py --model resnet18 --epochs 1 --eps 0.08 --r-max 128
 
@@ -71,7 +71,7 @@ bench_summary.csv (latency/throughput/VRAM summary)
 
 Use in your code (2 lines)
 python
-Copier le code
+
 import timm
 from adaptive_lowrank.core import wrap_model_with_adaptive, materialize_model, iter_adaptive_layers
 
@@ -185,7 +185,7 @@ device details (CPU/GPU).
 Run tests locally before PR:
 
 bash
-Copier le code
+
 pytest -q
 Citation
 If you use this project in research, please cite the original Frequent Directions work and this repository.
@@ -195,7 +195,7 @@ Frequent Directions: D. Liberty, Simple and Deterministic Matrix Sketching, 2013
 This repo: <Your Name>, adaptive-lowrank, 2025. GitHub: https://github.com/<you>/adaptive-lowrank
 
 arduino
-Copier le code
+
 @misc{adaptive_lowrank_2025,
   title  = {adaptive-lowrank: Adaptive rank layers for PyTorch using Frequent Directions},
   author = {<Your Name>},
